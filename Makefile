@@ -1,8 +1,16 @@
-.PHONY: clean All
+CC = gcc
+CFLAGS = -std=c99 -Wall
+HEADERS := $(patsubst %.c,%.o,$(wildcard *.c */*.c))
+EXECUTABLE = Euler
 
-All:
-	@echo "----------Building project:[ ProjectEuler - Debug ]----------"
-	@$(MAKE) -f  "ProjectEuler.mk"
+
+.PHONY: all clean
+
+all: $(HEADERS)
+	$(CC) -o $(EXECUTABLE) $(HEADERS) $(CFLAGS)	
+
+%.o: %.c %.h
+	$(CC) -c -o $@ $< $(CFLAGS)
+
 clean:
-	@echo "----------Cleaning project:[ ProjectEuler - Debug ]----------"
-	@$(MAKE) -f  "ProjectEuler.mk" clean
+	rm -f *.o */*.o Euler
