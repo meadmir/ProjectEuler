@@ -18,6 +18,6 @@ int main(int argc, char **argv)
 	// print the answer and execution time to std output
 	printf("The answer is:  %s\n", answer_string);
 	printf("Execution time: %f %s\n", 1000 * (stop - start) / (float) CLOCKS_PER_SEC, "ms");
-	free(answer_string);
+	//free(answer_string);
 	return 0;
 }

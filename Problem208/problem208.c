@@ -2,10 +2,11 @@
 #include <stdio.h>
 
 char* problem208(void) {
-	char* str = malloc(3 * sizeof(char));
-	str[0] = 'a';
-	str[1] = 'b';
-	str[2] = 'c';
-	printf("%c\n", str[3]);
-	return str;
+	float x = 0, y = 0;
+	int theta = 90;
+	const int alpha = 72;
+	
+	for (int i = 0; i < 5; ++i) 
+	
+	return "str";
 }
