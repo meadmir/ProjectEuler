@@ -1,5 +1,6 @@
 #include "Problem58/problem58.h"
 #include "Problem102/problem102.h"
+#include "Problem208/problem208.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -7,7 +8,7 @@
 int main(int argc, char **argv)
 {
 	// choose the problem
-	char* (*answer)(void) = problem58;
+	char* (*answer)(void) = problem208;
 	
 	// get the answer
 	time_t start = clock();
