@@ -2,8 +2,8 @@
 #define PROBLEM208
 
 typedef struct direction {
-   short v;
    short h;
+   short v;
 } Direction;
 
 typedef struct state {
